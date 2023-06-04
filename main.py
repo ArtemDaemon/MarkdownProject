@@ -13,10 +13,10 @@ def bold(s: str) -> str:
 
 
 if __name__ == "__main__":
-    txt = input('Введите Markdown-строку для форматирования\n')
+    txt = input('Введите Markdown-строку для форматирования (version 2)\n')
     if txt[0] == '*' and txt[-1] == '*':
         if txt[1] == '*' and txt[-2] == '*':
             txt = bold(txt)
         else:
             txt = italic(txt)
-    print('Отформатированная строка:\n' + txt)
+    print('Отформатированная строка (version 2):\n' + txt)
